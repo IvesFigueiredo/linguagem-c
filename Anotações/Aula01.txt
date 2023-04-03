@@ -1,0 +1,64 @@
+Data 03/04
+
+1 - Instalar o programa ferramenta "WINGW" - Além de instalar a extenção C/C++
+
+    * Diferencia maiuscula e minuscula (Case sensitive)
+    *Compilador ignora quebra de linhas, espaços e tabulações, no meio do codigo
+    * A utilização do \n e \t também é válida com a mesma propriedade do Portugol Studio
+
+        Exemplo:
+        #include <stdio.h> - É chamado pois é uma biblioteca padrão
+
+        int main() - Função mainn que exige o retorno
+        {
+            printf("Olá mundo"); return 0;
+        }
+_____________________________________________________________
+                            ou
+_____________________________________________________________
+       
+       #include <stdio.h>
+
+       int main()
+       {
+            printf("Olá mundo");
+            return 0;
+       }
+
+       Identificador                    Formato
+
+       %d                              Inteiro decimal
+       %c                              Caracter simples
+       %s                              Cadeia de Caracter
+       %f                              Ponto Flutuante (decimal)
+       %e                              Ponto Flutuante (notação exponencial)
+       %g                              Usa o %f ou o %e mais curto
+       %lf                             Tipo double
+       %u                              
+       %o                              
+       %x                              
+_____________________________________________________________
+
+    Exemplo02:
+
+       #include <stdio.h>
+       int soma;
+       int main() {
+
+            soma=(4+90);
+            printf("A soma é: %d", soma);
+            return 0;
+       }
+_____________________________________________________________
+
+       #include <stdio.h>
+       float soma;
+       int main() {
+
+            soma=(4+90);
+            printf("A soma é: %.2f", soma);  -- Para apresentação de 2 casas decimais
+            return 0;
+       }
+_____________________________________________________________
+
+
