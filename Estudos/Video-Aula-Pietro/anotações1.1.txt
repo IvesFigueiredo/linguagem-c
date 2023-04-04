@@ -12,6 +12,7 @@ Não é possível debugar arquivos-fonte isolados. É necessário criar todo o p
 
 Ajuda muito para corrigir um programa, é um esquema PASSO-A-PASSO das linhas.
 ________________________________________________________________
+Para [PRINTF]
 Especificadores de formato 
 
         Identificador                   Formato
@@ -47,3 +48,30 @@ Sequência de escape
         \x12                            Caractere relacionado ao código 12 em hexadecimal (ASCII) -x12 é um exemplo na tabela
         %%                              Caractere %
 _____________________________________________________________
+Para [SCANF]
+
+Sintaxe:
+
+    scanf(<formato especificado>, &<variável1>, &<variavel2>);  LEMBRAR DO "&"!
+
+            **No momento em que especificar o formmato da variável, e houver mais de uma variável é necessário especificar o formato na mesma quantidade de variáveis, o programa irá ler respectivamente, formato1, formato2, variavel1, variavel2, assim sucessivamente.**
+
+os Especificadores de formato são os mesmos do [PRINTF], exceto;
+
+        chars - O chars lê todos os dados digitados, exceto os especificados em "chars".
+
+        Identificador                       Formato
+
+        %d ou %i            int            Inteiro decimal         
+        %c                              Caracter simples
+        %s                              Cadeia de Caracter
+        %f                  float          Ponto Flutuante (decimal)
+        %e                              Ponto Flutuante (notação exponencial)
+        %g                              Usa o %f ou o %e mais curto
+        %lf                             Tipo double
+        %u                              -
+        %o                              -
+        %x                              Números inteiros em base hexadecimal
+
+        Exemplo:
+
