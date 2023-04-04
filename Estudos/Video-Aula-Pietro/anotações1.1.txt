@@ -12,3 +12,38 @@ Não é possível debugar arquivos-fonte isolados. É necessário criar todo o p
 
 Ajuda muito para corrigir um programa, é um esquema PASSO-A-PASSO das linhas.
 ________________________________________________________________
+Especificadores de formato 
+
+        Identificador                   Formato
+
+        %d ou %i                        Inteiro decimal
+        %c                              Caracter simples
+        %s                              Cadeia de Caracter
+        %f                              Ponto Flutuante (decimal)
+        %e                              Ponto Flutuante (notação exponencial)
+        %g                              Usa o %f ou o %e mais curto
+        %lf                             Tipo double
+        %u                              -
+        %o                              -
+        %x                              Números inteiros em base hexadecimal
+        .<num>                          Especifica quantos dígitos serão impressos após vírgula Exemplo: "%.2f"
+================================================================
+Sequência de escape
+        Escape                          Descrição
+
+        \a                              Toca um bipe, alarme sonoro padrão do sistema
+        \b                              Backspace
+        \n                              Quebra de linha
+        \t                              Tabulação horizontal(TAB)
+        \r                              Retorna ao início da linha
+        \0                              Caractere nulo
+        \v                              Tabulação vertical
+        
+        \\                              Caractere \
+        \'                              Caractere '
+        \"                              Caractere "
+        \?                              Caractere ?
+        \123                            Caractere relacionado ao código 123 em octal (ASCII) - 123 é um exemplo na tabela 
+        \x12                            Caractere relacionado ao código 12 em hexadecimal (ASCII) -x12 é um exemplo na tabela
+        %%                              Caractere %
+_____________________________________________________________
