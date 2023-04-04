@@ -1,0 +1,14 @@
+Início: Aula 01 
+
+Linguagem C é linguagem de alto nível, pois abrange os processadores, acima do assembly, portanto se caracteriza como linguagem de alto nível.
+No entanto, foi desenvolvida para ser logo no nível acima, é uma linguagem de alto desempenho por ser compilada.
+________________________________________________________________
+
+Aula 02 DEBUGAR:
+
+Encontrar erros semânticos, erros semânticos são diferentes dos erros de sintáxe, pois é da responsabilidade do programador, o programa não tem capacidade de indentificar. Erro de sintáxe é a estrutura do comando, que o próprio programa irá indentificar e avisar.
+
+Não é possível debugar arquivos-fonte isolados. É necessário criar todo o projeto.
+
+Ajuda muito para corrigir um programa, é um esquema PASSO-A-PASSO das linhas.
+________________________________________________________________
