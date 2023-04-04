@@ -1,0 +1,3 @@
+Lista de erros e explicação.
+
+1- Esperado um ';' - Error de falta de ";", geralmente o error informa ser na linha posterior do local de fato.
