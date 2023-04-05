@@ -9,3 +9,5 @@ Lista de erros e explicação.
 4- too many arguments for format [-Wformat-extra-args] - Quando há falta de algum indentificador e esteja com alguma variável a + na linha. 
 
 5-format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=] - PARA PRINTF NÃO PRECISA DO &, APENAS NO SCANF.
+
+6- format '%d' expects a matching 'int' argument [-Wformat=] - ESPERANDO PELA DECLARAÇÂO DA VARIÁVEL.
