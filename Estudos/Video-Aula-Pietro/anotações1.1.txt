@@ -12,6 +12,8 @@ Não é possível debugar arquivos-fonte isolados. É necessário criar todo o p
 
 Ajuda muito para corrigir um programa, é um esquema PASSO-A-PASSO das linhas.
 ________________________________________________________________
+Aula 02
+
 Para [PRINTF]
 Especificadores de formato 
 
@@ -75,3 +77,44 @@ os Especificadores de formato são os mesmos do [PRINTF], exceto;
 
         Exemplo:
 
+            #include <stdlib.h>
+
+            int main() {
+
+                int idade = 0;
+                int ano = 1950;                    
+
+                printf("Informe a idade e o ano que desejar:\n");
+                scanf("%d %d", &idade, &ano);
+
+                printf("A idade digita eh, %d.\n", idade);
+                printf("O ano informado eh, %d.\n", ano);
+        
+            system("pause");
+            }
+_____________________________________________________________
+Aula 03
+
+Como na pseudo-linguagem, é necessário primeiramente fazer a declaração da variável.
+
+            <tipo> <nome>
+
+Nomenclatura:
+    -Não pode iniciar com Números.
+    -Não pode caracteres especiais.
+    -Não pode haver espaço.
+ 
+ Operadores:
+                Mesmo método do Portugol.
+
+    = Atribuição
+    == Comparação (igual)
+
+    Para constantes:
+        A diretiva "#define", cria-se um identificador para um dado de qualquer tipo.
+
+            Exemplo de uma declaração de constante, faz com que não permita a modificação do valor:
+                
+                 #define <nome> <valor>
+
+    
