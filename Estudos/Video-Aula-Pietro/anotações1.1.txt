@@ -116,5 +116,24 @@ Nomenclatura:
             Exemplo de uma declaração de constante, faz com que não permita a modificação do valor:
                 
                  #define <nome> <valor>
+________________________________________________________________
+Aula 04
+
+Operadores:
+
+    Soma: +     |       Subtração: -       |      Multiplicação: *      |      Divisão: /     |     Resto de divisão inteira: %
+
+Obs: Existe precedência entre operadores. Multiplicação, Divisão, primeiro que soma e subtração. Entre parênteses "()" tem a maior precedência dos demais. Como na matemática.
+
+    Operadores de atribuição:
+
+    ++ : Incremento de 1 unidade.
+    -- : Decremento em 1 unidade.
+    += : Incremento Genérico
+    -= : Decremento Genérico
+    *= : Atribuição com Multiplicação
+    /= : Atribuição com Divisão
+
+            Igualmente com o Portugol Studio.
 
     
