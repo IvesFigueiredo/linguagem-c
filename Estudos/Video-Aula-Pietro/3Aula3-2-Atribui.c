@@ -7,7 +7,7 @@ int main() {
 
     int dado;
 
-    printf("Informe um numero para aplicacao de atribuicoes:\n");
+    printf("Informe um numero para aplicacao de atribuições:\n");
     scanf("%d", &dado);
 
     printf("O valor antes do incremento: %d.\n", dado);
