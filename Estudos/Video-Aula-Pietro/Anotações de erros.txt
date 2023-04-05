@@ -1,5 +1,11 @@
 Lista de erros e explicação.
 
 1- Esperado um ';' - Error de falta de ";", geralmente o error informa ser na linha posterior do local de fato.
+
 2- implicit declaration of function 'scranf' [-Wimplicit-function-declaration] - ERRO DE DIGITAÇÃO 'scranf'
+
 3- format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=] - VARIAVEL CHAR NÃO É NECESSÁRIO POR O '&'
+
+4- too many arguments for format [-Wformat-extra-args] - Quando há falta de algum indentificador e esteja com alguma variável a + na linha. 
+
+5-format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=] - PARA PRINTF NÃO PRECISA DO &, APENAS NO SCANF.
