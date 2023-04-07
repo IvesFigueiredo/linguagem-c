@@ -135,5 +135,17 @@ Obs: Existe precedência entre operadores. Multiplicação, Divisão, primeiro q
     /= : Atribuição com Divisão
 
             Igualmente com o Portugol Studio.
+_____________________________________________________________
+Aula 05
 
+    Condicionante IF.
+        Como no Portugol Studio, utiliza-se os mesmos operadores relacionais:
+        _____________________________________________________________
+       | Maior: >                |       Menor: <                   |
+       | -----------------------------------------------            |
+       | Maior ou igual: >=      |       Menor ou igual: <=         |
+       | -----------------------------------------------            |
+       | Igual: ==               |       Diferente: !=              |
+       |____________________________________________________________|
+    
     
