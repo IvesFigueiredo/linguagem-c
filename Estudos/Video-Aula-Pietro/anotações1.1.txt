@@ -167,4 +167,24 @@ Aula 05
        |         NEGAÇÂO         |              !                   |
        |____________________________________________________________|
 
-       
+       Utilização do ELSE:
+
+       Do mesmo formato que no Portugol Studio.
+
+       Se - IF
+       Senao SE - Else IF
+       Senao - Else
+
+       # Lembrando que a identação é a seguinte:
+        ______________________________
+       | if ( <condição> ) {          |
+       |     <procedimento>           |
+       | } else if ( <condição> ) {   |
+       |     <procedimento>           |
+       | } else {                     |
+       |     <procedimento>           |
+       | }                            |
+       |______________________________|
+_____________________________________________________________
+Aula 06
+
