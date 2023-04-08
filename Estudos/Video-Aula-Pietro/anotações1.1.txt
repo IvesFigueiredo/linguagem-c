@@ -148,4 +148,23 @@ Aula 05
        | Igual: ==               |       Diferente: !=              |
        |____________________________________________________________|
     
-    
+    Operadores Condicionantes juntamente com Operadores Lógicos:
+
+        # Conjunção: 
+            No Portugol Studio, utilizamos o operador "e". Só é verdadeiro quando tudo for verdadeiro. Em C, utiliza "&&"
+
+        # Disjunção:
+            No Portugol Studio, utilizamos o operador "ou". Só é verdadeiro se um ao menos um caso for verdadeiro. Em C, utiliza "||"
+
+        # Negação:
+            No Portugol Studio, utilizamos o operador "!=". Só é verdadeiro quando tudo for falso. Em C, utiliza "!"
+
+        _____________________________________________________________
+       |            E            |              &&                  |
+       | -----------------------------------------------            |
+       |            OU           |              ||                  |
+       | -----------------------------------------------            |
+       |         NEGAÇÂO         |              !                   |
+       |____________________________________________________________|
+
+       
