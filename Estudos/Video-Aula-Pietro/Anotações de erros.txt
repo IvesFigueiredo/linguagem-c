@@ -13,3 +13,5 @@ Lista de erros e explicação.
 6-format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=] - PARA PRINTF NÃO PRECISA DO &, APENAS NO SCANF.
 
 7- format '%d' expects a matching 'int' argument [-Wformat=] - ESPERANDO PELA DECLARAÇÂO DA VARIÁVEL.~
+
+8- QUANDO CARACTER SIMPLES [%c], É NECESSÁRIO INSERIR "&" NO SCANF.
