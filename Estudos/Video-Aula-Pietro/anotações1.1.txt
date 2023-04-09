@@ -188,3 +188,37 @@ Aula 05
 _____________________________________________________________
 Aula 06
 
+    Condicionante SWITCH - CASE (Escolha-Caso)
+
+        No memso funcionamento do Portugol Studio. Comparação da variável, e entrada no bloco.
+        
+        Logo: 
+
+        ____________________________________
+        |   SWITCH      |   Escolha         |
+        |   CASE        |   Caso            |
+        |   BREAK       |   Pare            |
+        |   DEFAULT     |   Caso contrario  |
+        |___________________________________|
+
+            Ex:
+               ______________________________________
+              |  switch(<var>) {                     |
+              |      case <v1> :                     |
+              |          <bloco_de_comandos1>        |
+              |          break;                      |
+              |                                      |
+              |      case <v2> :                     |
+              |          <bloco_de_comandos2>        |
+              |          break;                      |
+              |      ...                             |
+              |      case <vN> :                     |
+              |          <bloco_de_comandosN>        |
+              |          break;                      |
+              |                                      |
+              |      default:                        |
+              |          <bloco_de_comandos_padrão>  |
+              |          break;                      |
+              |  }                                   |
+              |______________________________________|
+
