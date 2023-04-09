@@ -6,8 +6,10 @@ Lista de erros e explicação.
 
 3- format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=] - VARIAVEL CHAR NÃO É NECESSÁRIO POR O '&'
 
-4- too many arguments for format [-Wformat-extra-args] - Quando há falta de algum indentificador e esteja com alguma variável a + na linha. 
+4- LEMBRAR SEMPRE QUE 'char'-'%s' NA VARIÁVEL DEVE POR O NUMERO DE CARACTERES '[50]'. Ex: "char nome[50];".
 
-5-format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=] - PARA PRINTF NÃO PRECISA DO &, APENAS NO SCANF.
+5- too many arguments for format [-Wformat-extra-args] - Quando há falta de algum indentificador e esteja com alguma variável a + na linha. 
 
-6- format '%d' expects a matching 'int' argument [-Wformat=] - ESPERANDO PELA DECLARAÇÂO DA VARIÁVEL.
+6-format '%d' expects argument of type 'int', but argument 3 has type 'int *' [-Wformat=] - PARA PRINTF NÃO PRECISA DO &, APENAS NO SCANF.
+
+7- format '%d' expects a matching 'int' argument [-Wformat=] - ESPERANDO PELA DECLARAÇÂO DA VARIÁVEL.~
