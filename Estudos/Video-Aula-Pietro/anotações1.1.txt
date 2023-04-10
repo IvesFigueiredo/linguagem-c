@@ -64,6 +64,7 @@ os Especificadores de formato são os mesmos do [PRINTF], exceto;
 
         Identificador                       Formato
 
+        %d                  bool           Booleano (Verdadeiro = 1 ou Falso = 0)
         %d ou %i            int            Inteiro decimal         
         %c                              Caracter simples
         %s                  char           Cadeia de Caracter
