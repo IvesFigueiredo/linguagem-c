@@ -15,3 +15,5 @@ Lista de erros e explicação.
 7- format '%d' expects a matching 'int' argument [-Wformat=] - ESPERANDO PELA DECLARAÇÂO DA VARIÁVEL.~
 
 8- QUANDO CARACTER SIMPLES [%c], É NECESSÁRIO INSERIR "&" NO SCANF.
+
+9- o identificador "bool" não está definido - É NECESSÁRIO INCLUIR A BIBLIOTECA <stdbool.h> para utilizar a lógica booleana.
