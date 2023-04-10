@@ -13,7 +13,7 @@ int main(){
     printf("Informe o seu nome:\n");
     scanf("%s", nome);
     printf("Qual o seu genero? [H - Homem, M - Mulher]\n");
-    scanf("%c", &sexo);
+    scanf(" %c", &sexo);
     printf("Informe o estado civil?\n");
     scanf("%s", civil);
 
