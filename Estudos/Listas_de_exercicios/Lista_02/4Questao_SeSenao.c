@@ -7,9 +7,9 @@ int main() {
 
     int num1, num2, num3;
 
-    printf("Informe o primeiro numero:\n");
+    printf("Informe o primeiro número:\n");
     scanf("%d", &num1);
-    printf("Informe o segundo numero:\n");
+    printf("Informe o segundo número:\n");
     scanf("%d", &num2);
 
     if (num1 == num2) {
@@ -17,6 +17,6 @@ int main() {
         printf("Soma: %d\n", num3);
     } else {
         num3 = num1*num2;
-        printf("Multiplicacao: %d\n", num3);
+        printf("Multiplicação: %d\n", num3);
     }
 }
