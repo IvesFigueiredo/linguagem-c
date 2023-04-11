@@ -21,7 +21,5 @@ printf("Alarme desligado? %d\n", !estado);
     printf("Todas as janelas abertas? %d\n", estado);
 }
 
-
-
 system("pause");
 }
