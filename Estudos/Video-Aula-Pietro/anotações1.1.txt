@@ -71,7 +71,7 @@ os Especificadores de formato são os mesmos do [PRINTF], exceto;
         %f                  float          Ponto Flutuante (decimal)
         %e                              Ponto Flutuante (notação exponencial)
         %g                              Usa o %f ou o %e mais curto
-        %lf                             Tipo double
+        %lf                 double            Tipo double
         %u                              -
         %o                              -
         %x                              Números inteiros em base hexadecimal
