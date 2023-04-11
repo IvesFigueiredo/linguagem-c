@@ -17,4 +17,5 @@ int main() {
     } else {
         printf("É impar.\n");
     }
+    system("pause");
 }
