@@ -8,9 +8,9 @@ int main () {
     float sal, novoSal, difSal;
     int  codigo;
     char retorno;
-system("cls");
-
+    
     do {
+system("cls");
         printf("\t\tSistema para reajuste de salário.\n\nInforme o seu salário atual: ");
         scanf("%f", &sal);
         printf("Informe o código da função que você exerce: ");
@@ -50,8 +50,8 @@ system("cls");
             break;
         }
         printf("\nDeseja preencher novamente? [s - sim | n - não]\n");
-        scanf("%c", &retorno);
-    } while (retorno != 'n');
+        scanf(" %c", &retorno);
+    } while (retorno != 'n' && retorno != 'N');
 
 
 return 0;
