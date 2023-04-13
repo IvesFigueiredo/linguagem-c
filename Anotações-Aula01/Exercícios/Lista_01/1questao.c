@@ -24,12 +24,12 @@ system("cls");
 
         verif = num1+num2 < num3;
 
-        printf("Verificador: %d.\n", verif);
+//        printf("Verificador: %d.\n", verif);
 
         if(verif == 1) {
-            printf("A soma dos dois primeiros números é menor que o terceiro número informado.\n");
+            printf("\nA soma dos dois primeiros números é menor que o terceiro número informado.\n\n");
         } else {
-            printf("A soma dos dois primeiros números é maior que o terceiro número informado.\n");
+            printf("\nA soma dos dois primeiros números é maior que o terceiro número informado.\n\n");
         }
 
         printf("Deseja realizar outra operação? [ s - Sim | n - Não ]\n");
