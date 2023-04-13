@@ -4,12 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <stdbool.h>
 
 int main () {
 
     int  time1, time2;
     char  nomTim1[50], nomTim2[50];
     char retorno;
+    bool verif;
 
     do {
 system("cls");
@@ -39,7 +41,11 @@ system("cls");
 
         printf("Deseja realizar outra operação? [ s - Sim | n - Não ]\n");
         scanf(" %c", &retorno);
-    } while ( retorno != 'n' && retorno != 'N');
+
+        verif = (retorno != 'n' && retorno != 'N');
+        printf("Verificação: %d.\n", verif);
+        system("pause");
+    } while ( verif == 1);
 
 return 0;
 }
