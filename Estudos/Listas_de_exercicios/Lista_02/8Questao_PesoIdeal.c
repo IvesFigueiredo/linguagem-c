@@ -34,4 +34,6 @@ int main(){
     printf("O seu peso ideal é, %.2f kg.\n", peso);
 
     system("pause");
+
+    return 0;
 }
