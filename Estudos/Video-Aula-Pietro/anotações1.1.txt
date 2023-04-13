@@ -2,6 +2,18 @@ Início: Aula 01
 
 Linguagem C é linguagem de alto nível, pois abrange os processadores, acima do assembly, portanto se caracteriza como linguagem de alto nível.
 No entanto, foi desenvolvida para ser logo no nível acima, é uma linguagem de alto desempenho por ser compilada.
+
+    Bibliotecas:
+
+        <stdio.h> - Principal para qualquer programa.
+
+
+    Função:
+
+        int main(){} - Deve sempre no final do programa incrementar o [return 0].
+
+        int main(void) {} - Não é necessário incrementar o [return 0] no final do programa.
+        
 ________________________________________________________________
 
 Aula 02 DEBUGAR:
@@ -222,4 +234,41 @@ Aula 06
               |          break;                      |
               |  }                                   |
               |______________________________________|
+____________________________________________________________
+
+system("cls"); - limpa() - limpar a tela.
+
+Utilização do [return 0;]:
+___________________________________________________________________________________________________________
+|int main() {                                                                                              |
+|                                                                                                          |
+|    //programa//                                                                                          |
+|                                                                                                          |
+|    return 0;  -- É necessário incrementar o return 0; pois a função main() é int, logo o retorno é zero. |
+|}                                                                                                         |
+|__________________________________________________________________________________________________________|
+
+    Laço de repetição:
+
+        FOR - (para):
+
+            for (inicialização; condição; incremento/decremento) {
+                //processo//
+            }
+___________________________________________________________________________________________________________
+        While - enquanto;
+
+            while (condição) {
+                //processo//
+            }
+___________________________________________________________________________________________________________
+        Do while - Faça enquanto:
+
+            do {
+                //processo//
+            } while (condição);
+___________________________________________________________________________________________________________
+
+
+
 
