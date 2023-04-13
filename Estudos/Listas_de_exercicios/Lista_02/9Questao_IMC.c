@@ -7,7 +7,9 @@ int  main() {
 
     float alt, peso, imc;
 
-    printf("Análise da condição de Peso - IMC.\nInforme o seu peso em kilogramas [ Kg ]: ");
+system("cls");
+
+    printf("\t\tAnálise da condição de Peso - IMC.\n\nInforme o seu peso em kilogramas [ Kg ]: ");
     scanf("%f", &peso);
     printf("Informe a sua altura em metros [ m ]: ");
     scanf("%f", &alt);
@@ -28,4 +30,6 @@ int  main() {
     }
 
     system("pause");
+     
+    return 0;
 }
