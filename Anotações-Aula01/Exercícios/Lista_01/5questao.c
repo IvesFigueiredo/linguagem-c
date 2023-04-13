@@ -20,25 +20,25 @@ system("cls");
         scanf("%s", nomTim2);
 
         do {
-        printf("Quantos gols o %s realizou no jogo?\n", nomTim1);
-        scanf("%d", &time1);
+            printf("Quantos gols o %s realizou no jogo?\n", nomTim1);
+            scanf("%d", &time1);
         }while(time1 < 0); 
         do {
-        printf("Quantos gols o %s realizou no jogo?\n", nomTim2);
-        scanf("%d", &time2);
+            printf("Quantos gols o %s realizou no jogo?\n", nomTim2);
+            scanf("%d", &time2);
         } while (time2 < 0);
         if (time1 > time2) {
             printf("O %s venceu!\n", nomTim1);
             printf("Placar: %s - %d x %d - %s.\n", nomTim1, time1, time2, nomTim2);
-        } else if ( time1 < time2) {
+        }else if ( time1 < time2) {
             printf("O %s venceu!\n", nomTim2);
             printf("Placar: %s - %d x %d - %s.\n", nomTim1, time1, time2, nomTim2);
         }else {
             printf("Houve empate!\nPlacar: %s - %d x %d - %s.\n", nomTim1, time1, time2, nomTim2);
         }
 
-    printf("Deseja realizar outra operação? [ s - Sim | n - Não ]\n");
-    scanf(" %c", &retorno);
+        printf("Deseja realizar outra operação? [ s - Sim | n - Não ]\n");
+        scanf(" %c", &retorno);
     } while ( retorno != 'n' && retorno != 'N');
 
 return 0;
