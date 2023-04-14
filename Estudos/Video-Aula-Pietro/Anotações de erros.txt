@@ -17,3 +17,5 @@ Lista de erros e explicação.
 8- QUANDO CARACTER SIMPLES [%c], É NECESSÁRIO INSERIR "&" NO SCANF.
 
 9- o identificador "bool" não está definido - É NECESSÁRIO INCLUIR A BIBLIOTECA <stdbool.h> para utilizar a lógica booleana.
+
+10 - RELEMBRAR UMA VARIÁVEL NÃO PODE SER A MESMA VARIÁVEL PARA ACUMULAR UMA SOMA, É IMPORTANTE CRIAR UMA DIFERENTE.
