@@ -3,16 +3,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (){
+int main()
+{
 
     int i;
     system("cls");
 
-        for (i=0; i< 5; i++) {
-            printf("Aprendendo FOR.\n");
-        }
-        return 0;
-        system("pause");
+    for (i = 0; i < 5; i++)
+    {
+        printf("Aprendendo FOR.\n");
+    }
+    return 0;
+    system("pause");
 
-return 0;
+    return 0;
 }
