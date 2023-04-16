@@ -19,7 +19,7 @@ system("cls");
 
             if(num[i] %2 ==0 && num[i] !=0)
             {
-                dadosPar[i] = num[i];
+                scanf("%s", dadosPar[i]);  //Testar esse método.
             }else if(num[i] == 0)
             {
                 dadosNulo[i] = num[i];
