@@ -1,6 +1,7 @@
 //Nome: Ives Gabriel Figueiredo Santos Pinto
 //3 Questão do exercício de Vetores N2 da lista de Portugol.
 
+                            //Há atualização - [IMCOMPLETO]
 #include <stdio.h>
 #include <stdlib.h>
 
