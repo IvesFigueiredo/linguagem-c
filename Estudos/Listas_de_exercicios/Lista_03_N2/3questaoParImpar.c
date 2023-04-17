@@ -7,7 +7,7 @@
 
 int main(void) {
 system("cls");
-    char retorno;
+    char retorno, total[100];
     int i, num[15], dadosPar[15], dadosImpar[15], dadosNulo[15];
 
     do
@@ -19,10 +19,12 @@ system("cls");
 
             if(num[i] %2 ==0 && num[i] !=0)
             {
-                scanf("%s", dadosPar[i]);  //Testar esse método.
+                dadosPar[i] = num[i];
+
             }else if(num[i] == 0)
             {
                 dadosNulo[i] = num[i];
+
             }else
             {
                 dadosImpar[i] = num[i];
