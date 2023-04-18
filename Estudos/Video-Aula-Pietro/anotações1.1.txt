@@ -280,6 +280,29 @@ ________________________________________________________________________________
 
     Vetores
         
-        
+    Como no Portugol Studio, declara a variável ex.(int = var[10])
+
+___________________________________________________________________________________________________________
+
+    Matrizes        
+
+    Como no portugol studio. Dados Organizados em Linhas e Colunas - Planilha
+    
+    - Armazena dados de um único tipo.
+    - Acesso aos dados através de índices.
+    - Laços de repetição são essenciais no acesso.
+        1 laço para linha - Outro laço para coluna.
+
+    var[linha][coluna]
+
+            ex; int matriz[4][3] = {
+    
+                    {1,2,3},
+                    {4.5.6},
+                    {7,8,9},
+                    {10,11,12},
+                }
+
+
 
 
