@@ -9,13 +9,29 @@ Taxa 0.35% por operação de debito.*/
 #include <stdio.h>
 #include <stdlib.h>
 
-float saldoInicial;
+float saldoInicial, credito, creditoTotal = 0, debito, debitoTotal = 0, taxa = 0.65, saldoAtual = 0, saldoDebito =0, saldoCredito =0;
 
 void inserirDados() {
 
     printf("Informe o saldo da conta bancária: ");
     scanf("%f", &saldoInicial);
 }
+
+void calculoCredito(){
+    printf("Informe o valor da operação de crédito: ");
+    scanf("%f", &credito);
+    creditoTotal += credito; 
+    saldoCredito = saldoInicial + credito;
+    saldoCredito *= 0.035;
+}
+
+void calculoDebito() {
+    pritf("Informe o valor da operação de débito: ");
+    scanf("%f", &debito);
+    debitoTotal += debito;
+    saldoDebito = saldoInicial - debito; 
+}
+
 
 int main(void) {
 system("cls");
