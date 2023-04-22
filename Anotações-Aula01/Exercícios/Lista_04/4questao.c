@@ -10,11 +10,13 @@ Taxa 0.35% por operação de debito.*/
 #include <stdlib.h>
 
 float saldoInicial, credito, creditoTotal = 0, debito, debitoTotal = 0, taxa = 0.65, saldoAtual = 0, saldoDebito =0, saldoCredito =0;
+int operacao;
 
 void inserirDados() {
 
     printf("Informe o saldo da conta bancária: ");
     scanf("%f", &saldoInicial);
+    printf("Valor do Saldo Inicial: R$ +%.2f.\n", saldoInicial);
 }
 
 void calculoCredito(){
@@ -22,14 +24,39 @@ void calculoCredito(){
     scanf("%f", &credito);
     creditoTotal += credito; 
     saldoCredito = saldoInicial + credito;
-    saldoCredito *= 0.035;
+    printf("Operação: R$ +%.2f.\n", credito);
 }
 
 void calculoDebito() {
     pritf("Informe o valor da operação de débito: ");
     scanf("%f", &debito);
     debitoTotal += debito;
-    saldoDebito = saldoInicial - debito; 
+    saldoDebito = saldoInicial - debito;
+    saldoDebito *= 0.0035;
+    printf("Operação: R$ -%.2f", debito);
+}
+
+operacaoBancaria() {
+    printf("\tQual operação bancária deseja realizar?\n\n[1] - Operação de crédito.\n[2] - Operação de débito.\n[0] - Finalizar operação.\n");
+    scanf("%d", &operacao);
+    switch(operacao)
+    {
+        case 1:
+        calculoCredito();
+        break;
+
+        case 2: 
+        calculoDebito();
+        break;
+
+        case 0:
+        //FIM DE OPERAÇÃO, MOSTRAGEM DO SALDO FINAL, VALOR CREDITADOS, VALOR DEBITADOS, E VALOR DA TAXA A SER PAGA DAS TRANSAÇÕES DE DÉBITO. 
+        break;
+        
+        default:
+        printf("\nOpção inválida!\n");
+        break;
+    }
 }
 
 
@@ -37,11 +64,13 @@ int main(void) {
 system("cls");
     char retorno;
 
+    inserirDados();
+
     do
     {
 
 
-     printf("Deseja realizar outra operação? [ s - Sim | n - Não ]\n");
-     scanf(" %c", &retorno);
-    }while(retorno != 'n' && retorno != 'N');
+    
+    }while(operacao == 0);
+fimPrograma();
 }
