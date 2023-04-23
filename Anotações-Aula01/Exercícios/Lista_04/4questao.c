@@ -9,68 +9,96 @@ Taxa 0.35% por operação de debito.*/
 #include <stdio.h>
 #include <stdlib.h>
 
-float saldoInicial, credito, creditoTotal = 0, debito, debitoTotal = 0, taxa = 0.65, saldoAtual = 0, saldoDebito =0, saldoCredito =0;
+float saldoInicial, saldoFinal, credito, creditoTotal = 0, debito, debitoTotal = 0, taxa = 0.0035, saldoDebito = 0, saldoCredito = 0, taxadebitoTotal = 0;
 int operacao;
+char retorno;
 
-void inserirDados() {
+void fimPrograma()
+{
+    printf("\t\t\t________________________________________\n\t\t\t|\t\t\t\t\t|\n\t\t\t|\t   Direitos Reservados\t\t|\n\t\t\t|\t₢ Ives Figueiredo Pinto\t\t|\n\t\t\t|\t\tATÉ LOGO!\t\t|\n\t\t\t|_______________________________________|\n\n");
+}
+
+void inserirDados()
+{
 
     printf("Informe o saldo da conta bancária: ");
     scanf("%f", &saldoInicial);
     printf("Valor do Saldo Inicial: R$ +%.2f.\n", saldoInicial);
 }
 
-void calculoCredito(){
+void calculoCredito()
+{
+
     printf("Informe o valor da operação de crédito: ");
     scanf("%f", &credito);
-    creditoTotal += credito; 
-    saldoCredito = saldoInicial + credito;
-    printf("Operação: R$ +%.2f.\n", credito);
+    creditoTotal += credito;
+    printf("Você está depositando R$ %.2f.\n", credito);
+    system("pause");
 }
 
-void calculoDebito() {
-    pritf("Informe o valor da operação de débito: ");
+void calculoDebito()
+{
+    printf("Informe o valor da operação de débito: ");
     scanf("%f", &debito);
     debitoTotal += debito;
-    saldoDebito = saldoInicial - debito;
-    saldoDebito *= 0.0035;
-    printf("Operação: R$ -%.2f", debito);
+    taxadebitoTotal = debitoTotal * 0.0035;
+    printf("Você está retirando R$ %.2f.\n", debito);
+    system("pause");
 }
 
-operacaoBancaria() {
-    printf("\tQual operação bancária deseja realizar?\n\n[1] - Operação de crédito.\n[2] - Operação de débito.\n[0] - Finalizar operação.\n");
+void operacaoBancaria()
+{
+    printf("\tQual operação bancária deseja realizar?\n\n[1] - Operação de crédito.\n[2] - Operação de débito.\n[3] - Extrato.\n[0] - Finalizar operação.\n");
     scanf("%d", &operacao);
-    switch(operacao)
+    switch (operacao)
     {
-        case 1:
+
+    case 1:
         calculoCredito();
         break;
 
-        case 2: 
+    case 2:
         calculoDebito();
         break;
 
-        case 0:
-        //FIM DE OPERAÇÃO, MOSTRAGEM DO SALDO FINAL, VALOR CREDITADOS, VALOR DEBITADOS, E VALOR DA TAXA A SER PAGA DAS TRANSAÇÕES DE DÉBITO. 
+    case 3:
+        mostragem();
         break;
-        
-        default:
+
+    case 0:
+        printf("\nFSP ATM agradece a preferência. Até breve.\n");
+        break;
+
+    default:
         printf("\nOpção inválida!\n");
         break;
     }
 }
 
+void mostragem()
+{
+    printf("Valor do Saldo Inicial: R$ +%.2f.\n", saldoInicial);
+    printf("Operação de crédito: R$ +%.2f.\n", creditoTotal);
+    printf("Operação de débito: R$ -%.2f.\n", debitoTotal);
+    printf("Taxa de CPMF: R$ -%.2f.\n", taxadebitoTotal);
+    saldoFinal = saldoInicial + creditoTotal - (debitoTotal + taxadebitoTotal);
+    printf("Saldo Final: R$ %.2f.\n", saldoFinal);
+    system("pause");
+}
 
-int main(void) {
-system("cls");
-    char retorno;
+int main(void)
+{
+    system("cls");
+    //   char retorno;
 
     inserirDados();
 
     do
     {
+        system("cls");
 
+        operacaoBancaria();
 
-    
-    }while(operacao == 0);
-fimPrograma();
+    } while (operacao != 0);
+    fimPrograma();
 }
