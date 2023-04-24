@@ -302,6 +302,34 @@ ________________________________________________________________________________
                     {7,8,9},
                     {10,11,12},
                 }
+___________________________________________________________________________________________________________
+
+    Recursividade:
+
+        (Trabalhar com busca), quando um dos seus passos consiste na chamada de uma nova execução do mesmo procedimento.
+        Ou seja, algo que se repete, se refere a uma função, ou um determinado comando, puxando a linha. até criar uma condição de parada. Execução de um procedimento de maneira repetitiva. Repetição sucessiva.
+
+        Sequencia recursiva: São obitidas a partir dos termos anteriores: Padronizado
+
+        Ex: 02,05,08,11 - Pega o número anterior e soma 03.
+
+        Desvantagem, consome muita memoria ram, quando é acioanda, acumula o espaço de memoria, não libera.
+
+            Percorrer uma árvore binária. 
+
+           Exemplo de recursividade cálculo do fatorial de n:
+
+            int fatorial (int n) {
+                if (n<=1)
+                    return 1;
+                else
+                    return n * fatorial (n-1);
+            }
+        
+        
+
+
+
 
 
 
