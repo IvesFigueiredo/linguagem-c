@@ -9,6 +9,7 @@ char retorno;
 int valor, resto1=0, resto5=0, resto10=0, resto50=0, resto100=0, cedula1=0, cedula5=0, cedula10=0, cedula50=0, cedula100=0;
 
 void inserirDados() {
+    printf("\t\tATM FSP_Money - Bem vindo!\n\n");
     printf("Informe o valor que deseja retirar: ");
     scanf("%d", &valor);
 }
@@ -30,22 +31,10 @@ void calculoCedula(){
         cedula1 = resto5/1;
 
 }
-void zeragem() {
-    int resto5 = 0, resto10 = 0, resto50 = 0, resto100 = 0, cedula1 = 0, cedula5 = 0, cedula10 = 0, cedula50 = 0, cedula100 = 0;
-    resto1=0;
-    resto5=0;
-    resto10=0;
-    resto50=0;
-    resto100=0;
-    cedula1=0;
-    cedula5=0;
-    cedula10=0;
-    cedula50=0;
-    cedula100=0;
-}
+
 
 void mostragem(){
-    printf("Para o valor de %d reais, temos:\n", valor);
+    printf("\nPara o valor de %d reais, temos:\n\n", valor);
     printf("%d cédulas de 100 reais.\n", cedula100);
     printf("%d cédulas de 50 reais.\n", cedula50);
     printf("%d cédulas de 10 reais.\n", cedula10);
@@ -59,7 +48,6 @@ system("cls");
 do
 {
 system("cls");
-zeragem();
 inserirDados();
 calculoCedula();
 mostragem();
