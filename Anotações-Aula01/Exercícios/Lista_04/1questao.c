@@ -10,6 +10,9 @@ char retorno;
 float valorH = 19.5, salBru = 0, salLiq = 0;
 int hora;
 
+void fimPrograma() {
+         printf("\t\t\t________________________________________\n\t\t\t|\t\t\t\t\t|\n\t\t\t|\t   Direitos Reservados\t\t|\n\t\t\t|\t₢ Ives Figueiredo Pinto\t\t|\n\t\t\t|\t\tATÉ LOGO!\t\t|\n\t\t\t|_______________________________________|\n\n"); }
+
 void inserirDados()
 {
     printf("Informe a quantidade de horas trabalhadas:\n");
@@ -20,7 +23,7 @@ void calculoSalarioBruto()
     salBru = hora * valorH;
     printf("\nO valor do salário bruto: %.2f reais.\n", salBru);
 }
-void calculoSalarioliquido()
+void calculoSalarioLiquido()
 {
     if (salBru > 1500)
     {
@@ -51,5 +54,7 @@ int main(void)
 
         printf("\nDeseja realizar uma nova operação:\n");
         scanf(" %c", &retorno);
+
     } while (retorno != 'n' && retorno != 'N');
+void fimPrograma();
 }
