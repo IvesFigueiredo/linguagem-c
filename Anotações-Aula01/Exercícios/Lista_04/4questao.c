@@ -71,6 +71,7 @@ void operacaoBancaria()
 
     default:
         printf("\nOpção inválida!\n");
+        system("pause");
         break;
     }
 }
