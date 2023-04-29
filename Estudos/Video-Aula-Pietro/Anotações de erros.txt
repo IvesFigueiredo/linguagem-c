@@ -19,3 +19,5 @@ Lista de erros e explicação.
 9- o identificador "bool" não está definido - É NECESSÁRIO INCLUIR A BIBLIOTECA <stdbool.h> para utilizar a lógica booleana.
 
 10 - RELEMBRAR UMA VARIÁVEL NÃO PODE SER A MESMA VARIÁVEL PARA ACUMULAR UMA SOMA, É IMPORTANTE CRIAR UMA DIFERENTE.
+
+11 - control reaches end of non-void function [-Wreturn-type] -  uma função que deveria retornar um valor não tem uma declaração de retorno para todos os possíveis caminhos da função.
