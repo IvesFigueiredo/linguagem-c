@@ -361,6 +361,56 @@ Exemplo:
     #define ICMS 0.18;
     const float ICMS2 = 0.19, ICMS3 = 0.15;
 
+___________________________________________________________________________________________________________
 
+Estruturas - struct
 
+    Manipulação de strings
+        Utilizando a biblioteca <string.h>
+
+        Variáveis - strings - Cadeia
+
+            char nome[10]; // Um vetor com tamanho definido.
+            char nome[] = "Logica"; // Variável já inicializada.
+____________________________________
+
+        Função para manipulação - STRLEN - diz o tamanho da Cadeia
+
+        char str[] = "Programacao em C";
+        int tamanho = strlen(str); // Faz a leitura de quantos caracteres tem na variável str.
+        printf("Tamanho da string é de %d caracteres \n", tamanho);
+______________________________________
+
+        STRCPY - cópia de conteúdo
+
+        char origem[] = "Programacao";
+        char destino[50];
+        strcpy(destino, origem); // 1° Para onde vai 2° qual é a origem.
+        printf("Resultado Cópia da string: %s\n", destino);
+        strcpy(destino, "Segundo exemplo");
+        printf("Resultado Cópia da string: %s\n", destino);
+______________________________________
+
+        STRCAT - Concatenar
+
+        char str1[] = "Programação";
+        char str2[] = " em C";
+        strcat(str1, str2);
+        printf("Concatenação das strings: %s\n", str1);
+        printf(strcat(str1," Usando VSCODE));
+______________________________________
+
+        STRCMP - Comparação
+
+        char str1[] = "Desenvolvimento";
+        char str2[] = "Desenvolvimento";
+
+        if (strcmp(str1, str2) == 0)
+        {
+            printf("As strings são iguais.\n");
+        }
+        else
+        {
+            printf("As strings são diferentes.\n");
+        }
 
