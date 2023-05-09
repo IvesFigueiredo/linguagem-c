@@ -413,4 +413,46 @@ ______________________________________
         {
             printf("As strings são diferentes.\n");
         }
+___________________________________________________________________________________________________________
+
+    Sintaxe 
+
+        struct{
+
+         int n1;
+         char nome[100]
+         float valor;
+         double percent;
+        } <NOME_da_estrutura>
+
+
+___________________________________________________________________________________________________________
+
+    Typedef
+
+        Palavra reservada que define novos tipos de dados com nomes personalizados. 
+        Funciona como uma forma de renomeear tipos já existentes - Ex: int [->] inteiro.
+        Aplicada a qualquer tipo de daods, porem mais utilizadas em Structs.
+    
+    Exemplo:
+        #include <stdio.h>
+        typedef int inteiro;
+
+        int main (void){
+        inteiro num1;
+
+        }
+___________________________________________________________________________________________________________
+
+    Exemplo de sintaxe[2]
+
+        typedef struct {
+            char nome[30];
+            float matematica, fisica, media;
+            
+        }Alunos;
+
+        //Declaração de uma variável
+        Alunos turma[30];
+___________________________________________________________________________________________________________
 
