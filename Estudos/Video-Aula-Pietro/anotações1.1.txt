@@ -456,3 +456,29 @@ ________________________________________________________________________________
         Alunos turma[30];
 ___________________________________________________________________________________________________________
 
+    Ponteiros 
+
+        É uma variável que armaneza o endereço de memória de outra variavel
+
+        Os ponteiros armazenam nedereços de memoria que aponta para esses valores
+
+        Um ponteiro "aponta" para a localização de uma variável na memoria.
+
+        Normalmente: 
+            int n1=2;
+        Com ponteiro
+            int * numb;
+        
+        Vantagem: 
+            -
+            -Eficiência: O uso de ponteiros permite o acesso direto aos valores na memoria, o que ser mais eficiente em termos de tempo de execução e uso de recursos
+
+            - Manipulação de estrutura de dados: Pontweiros são essenciais para manipular estruturas de dados complescas, como listas encadeadas, arvores e grafos. Eles permitem o acesso e a modificação eficiente...
+____________________________________
+        Função dinamica de memória 
+
+        Quando o tamnho não é conhecido no momento em que escreve o código, mas é fornecido pelo usuário em quanto é executado. Salientando que após a utilização do da função dinâmica, a memória deve ser liberada usando a função "free(inserir_nome_do_ponteiro)"
+
+        Logo, a sintáxe é [ (ponteiro *) malloc(nome_da_variavel * sizeof(nome_elemento_struct)) ]
+
+        Como foi feito no programa da questão 3 da lista 07.
