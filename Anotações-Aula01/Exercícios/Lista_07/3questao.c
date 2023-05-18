@@ -50,11 +50,12 @@ int main(void)
     printf("\nQuantos alunos irá inserir: ");
     scanf("%d", &qntdAlunos);
     
-    alunos = (Alunos *) malloc(qntdAlunos * sizeof(Alunos)); // o ponteiro(alunos) recebe = (tipo_da_variavel * -> (Alunos *)) mallos()
+    alunos = (Alunos *) malloc(qntdAlunos * sizeof(Alunos)); // o ponteiro(alunos) recebe = (tipo_da_variavel * -> (Alunos *)) malloc()
 
     inserirDados();
     exibir();
     printf("\n");
+    printf("\nQuantidade, bytes, da variável é %d\n", sizeof(Alunos));
     system("pause");
 
     free(alunos);
