@@ -482,3 +482,43 @@ ____________________________________
         Logo, a sintáxe é [ (ponteiro *) malloc(nome_da_variavel * sizeof(nome_elemento_struct)) ]
 
         Como foi feito no programa da questão 3 da lista 07.
+
+___________________________________________________________________________________________________________
+
+    Pilha estática 
+
+        Busca binária - Algoritmo de ordenação
+        É uma estrutura de dados linear que segue a regra do LIFO (last in, First Out) - Último dado a entrar deve ser o primeiro dado a sair.
+
+        Pode ser implementada usando vetores ou structs, com ou sem ponteiros.
+
+        Funções / Operações
+
+        Push - inserir um elemento sempre no topo da pilha.
+        Pop - retirar um elemento sempre do topo da pilha.
+        PEEK - Retorna o topo da pilha sem realizar nenhuma operação.
+        ISEMPTY - Retorna um valor booleano validando se a pilha está vazia.
+        ISFULL - Retorna um valor booleano verificando se a pilha está cheia.
+            _______________________
+            |                      |
+            |Utilização de vetores.|
+            |______________________|
+
+        Operador de linguagem
+
+            Sizeof - Retorna o tamanho, em bytes, de um tipo de dado ou de uma expressão. Ele é usado para determinar o tamanho de um objeto em tempo de coompilação.
+
+___________________________________________________________________________________________________________
+
+    Alocação de memória dinâmica
+
+        malloc - É usada para alocar memória dinamicamente.
+        calloc - inicializa a memória alocada com zeros.
+        realloc - redimensiona o tamanho da memória alocada.
+        free - Libera o espaço alocado na memória.
+___________________________________________________________________________________________________________
+
+    Pilha dinâmica - Conceito
+
+        É uma estrutura de dados composta por um conjunto de elemntos, onde cada elemento possui dois componentes principais: o valor armazenado e um ponteiro para o próximo elemento da pilha.
+        O último elemento inserido aponta para NULL, indicando o fim da pilha.
