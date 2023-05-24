@@ -512,8 +512,10 @@ ________________________________________________________________________________
 
     Alocação de memória dinâmica
 
-        malloc - É usada para alocar memória dinamicamente. - SINTAXE: malloc( sizeof(int)); -> Retorna para um inteiro, a espaço de memória alocado.
+        malloc - É usada para alocar memória dinamicamente. - 
+            SINTAXE: malloc( sizeof(int)); -> Retorna para um inteiro, a espaço de memória alocado.
         calloc - inicializa a memória alocada com zeros.
+            
         realloc - redimensiona o tamanho da memória alocada.
         free - Libera o espaço alocado na memória.
 
@@ -534,3 +536,14 @@ ________________________________________________________________________________
     4- Inserção de um elemento na fila: Adiciona um elemento ne final da fila.
     5- Remoção de um elemento da fila: Remove o elemento na frente da fila.
     6 Acesso ao elemento na frente da fila: Obtém o valor do elemento na frente da fila sem remove-lo.
+____________________________________________________________________________
+
+    Pilha Dinâmica
+
+        Sempre será inserindo ou retirando um elemento no topo da PILHA
+____________________________________________________________________________
+    
+    Fila Dinâmica - FIFO (First In First Out)
+
+        -Pode iniciar vazia.
+        
