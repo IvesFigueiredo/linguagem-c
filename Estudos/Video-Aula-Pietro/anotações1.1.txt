@@ -526,6 +526,7 @@ ________________________________________________________________________________
 
         É uma estrutura de dados composta por um conjunto de elemntos, onde cada elemento possui dois componentes principais: o valor armazenado e um ponteiro para o próximo elemento da pilha.
         O último elemento inserido aponta para NULL, indicando o fim da pilha.
+
 ___________________________________________________________________________________________________________
 
     Estrutura de dados - fila estática
@@ -546,4 +547,95 @@ ____________________________________________________________________________
     Fila Dinâmica - FIFO (First In First Out)
 
         -Pode iniciar vazia.
-        
+
+
+
+forms - para pesquisa de campo
+
+_____________________________________________________________________________
+
+     Algoritmo de Busca
+
+-Método utilizado para encontrar um elemento em uma determinada estrutura de dados.
+-Presente em todas as linguagens de programação.
+-Implementação simples.
+-Resultados rápidos (Binária)
+
+            Tipos 
+    
+    #Busca Linear (sequncial)
+-Busca mais simples, de um vetor.
+-Pecorre toda a estrutura até encontrar o valor solicitado.
+
+    #Busca binária
+-Estrutura mais complexa
+-Funciona apenas em estruturas ordenadas
+    ______________________________
+    |     0   1   2   3   4    5  |
+    |A =| 3 | 5 | 6 | 9 | 20 | 27 |
+
+    Divide o vetor ao meio para buscar o elemento solicitado. Se o valor de busca é maior que o valor meio, o sistema correrá para a direita, se não irá correr a busca para a esquerda.
+
+    Vl_min = Representa o menor valor do vetor
+    Vl_max = representa o maior valor do vetor
+    Busca = O item a ser localizado do vetor
+    Meio = (Vl_min + Vl_max)/2
+____________________________________________________________
+
+        BUSCA LINEAR:
+
+    int busca_linear(int lista[], int tamanho, int valor)
+    {
+        for (int i = 0; i < tamanho; i++)
+        {
+            if (lista[i] == valor)
+            {
+                return i; // Retorna o índice onde o valor foi encontrado
+            }
+        }
+        return -1; // Retorna -1 se o valor não estiver na lista
+    }
+
+    int main()
+    {
+        system("cls);
+        int lista[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+        int tamanho = sizeof(lista) / sizeof(lista[0]);
+                // Testando a busca linear
+        int valor; // = 12;
+        printf("Informe o numero a ser localizado\n");
+        scanf("%d", &valor);
+        // Passa os parametros para a função
+        int indice = busca_linear(lista, tamanho, valor);
+        int indice_2 = busca_linear2(lista, valor);
+
+        if (indice != -1)
+        {
+            printf("O valor %d foi encontrado na posição %d\n", valor, indice);
+            printf("####################");
+            printf("Segunda versão: O valor %d também foi encontrado na posição %d\n", valor, indice);
+        }
+        else
+        {
+            printf("O valor %d não foi encontrado. \n", valor);
+            printf("#####################\n");
+            printf("Segunda Versão o valorr %d também não foi enncontrado. \n", valor);
+        }
+
+        int busca_linear2(int lista[], int valor)
+        {
+            int tam = sizeof(lista)/sizeof(lista[0]);
+            for (int i = 0; i < tam; i++)
+            {
+                if (lista[i] == valor)
+                {
+                    return i; // Retorna o índice onde o valor foi encontrado
+                }
+            }
+            return -1; // Retorna -1 se o valor não estiver na lista
+        }
+    }
+
+            BUSCA BINÁRIA:
+
+    
