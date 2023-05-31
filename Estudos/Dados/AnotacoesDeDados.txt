@@ -1,0 +1,73 @@
+                            Banco de Dados
+	
+	A estrutura de Dados é separado em:
+
+1- Base de dados - Dados propriamente dito.
+2- Sistema Gerenciador - SGBD (DNS - inglês)
+3- Linguagem de Exploração - Linguagem de acesso ao dado.
+4- Programas auxiliares.
+
+SQL é uma linguagem de consulta
+
+		MySQL:
+	
+ DDL: Definição, onde é possível criar um banco de dados, tabela, qualquer
+comando de definição.
+
+ DML: Manipulação, poderá incluir,  excluir, manipular dados de qualquer maneira.
+
+ DQL: Solicitações, poderá fazer SELECT.
+
+ DCL: Controle, permissão de usuário acessar dados, etc.
+
+ DTL: Transações, qualquer solicitação feita ao banco de dados.
+
+	Workbench é uma ferramenta para acessar o ambiente SQL 
+
+
+C++:	https://www.microsoft.com/pt-br/download/confirmation.aspx?id=48145
+.NET:	https://www.microsoft.com/pt-br/download/confirmation.aspx?id=30653
+MySQL:	https://dev.mysql.com/downloads/windows/installer/8.0.html
+Wamp:	https://www.wampserver.com/en/download-wampserver-64bits/
+
+	
+	Estrutura:
+
+ Banco de Dados: É o conjunto composto por, tabelas que são compostas por registros.
+	Sintaxe -> CREATE DATABASE cadastro;
+
+ Tabelas: É o conjunto compor por registros.
+	Sintaxe -> CREATE TABLE pessoas (
+		   nome varchar(30),		//Alocando 30 espaços
+		   idade tinyint(3),		//Alocando 3 espaços, no tinyint 3 espaços é o padrão, logo não seria necessário solicitar 3
+		   sexo char(1),	        //Alocando 1 espaço, porém "char" é caracter padrão é apenas 1 espaço 
+		   peso float,			
+		   altura float,
+		   nacionalidade varchar(20)	//Alocando 20 espaços
+		   );
+ 
+ Registros: São compostos por campos conforme exemplo acima(nome, idade, peso). 
+ Campos: É composto pelos dados propriamente dito de um determinado 
+ elemento que queira salvar.
+
+Tipos Primitivos:
+	-numérico:
+		*inteiro- TinyInt, SmallInt, Int, MediumInt, BigInt-(Tamanho de dados)
+		*real- Decimal, Float, Double, Real 
+		*lógico- Bit, Boolean
+	-data/tempo: Date, DateTime, TimeStamp, Time, Year
+	-literais:
+		*caractere- Char(espaço alocado Fixo), Vchar(espaço alocado Variavél)
+		*texto- TinyText, Text, MediumText, LongText (Depende do tamanho do texto)
+		*binário- TinyBlob, Blob, MediumBlob, LongBlob (Aguardar algo em binário IMG)
+		*coleção- Enum, Set (Configurar quais os valores permitidos, ex. Cadastro)
+	-especiais: Geometry, Point, Polygon, MultiPoligon
+	
+    
+
+Parei na aula 0
+
+
+
+
+
