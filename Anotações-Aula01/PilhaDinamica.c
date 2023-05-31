@@ -60,6 +60,60 @@ float retornatopo(struct Pilha *p)
 int main(void) {
 system("cls");
 
+    struct Pilha minhapilha;
+    int capacidade, op;
+    float valor;
 
+    printf("\nDefina, qual a capacidade da pilha?\n");
+    scanf("%d", &capacidade);
+    criarpilha(&minhapilha, capacidade);
+    while (1)
+    {
+        printf("\n1- Empilhar (PUSH)\n");
+        printf("2- Desempilhar (POP)\n");
+        printf("3- Mostrar o topo\n");
+        printf("\nQual opção deseja? ");
+        scanf("%d", &op);
 
+        switch (op)
+        {
+            case 1: //push
+                if (estacheia(&minhapilha) == 1)
+                {
+                    printf("\nPILHA CHEIA!\n");
+                }else{
+                    printf("Qual o valor deseja inserir? ");
+                    scanf("%f", &valor);
+                }
+            break;
+
+            case 2: //POP
+                if(estavazia(&minhapilha) == 1)
+                {
+                    printf("\nPILHA VAZIA!\n");
+                }else
+                {
+                    valor = desempilhar(&minhapilha);
+                    printf("\n%.1f DESEMPILHADO!\n", valor);
+                }
+                break;
+            
+            case 3: //Mostrar o topo
+                if (estavazia(&minhapilha) == 1)
+                {
+                    printf("\nPILHA VAZIA!\n");
+                } else
+                {
+                    valor = retornatopo(&minhapilha);
+                    printf("\nTOPO: %.1f\n", valor);
+                }
+                break;
+            
+            case 4:
+                exit(0);
+
+            default:
+                printf("\nOPÇÃO INVALIDA!\n");
+        }
+    }
 }
