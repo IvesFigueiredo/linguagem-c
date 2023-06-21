@@ -10,8 +10,9 @@ Adicionado por Jeferson Oliveira 31/05/2023 ("cadastro de dados dos clientes pel
 Adicionado por Jeferson Oliveira 31/05/2023 ("Adicionado a função para mostrar fila, adicionado a opção de adicionar clientes a fila segundo o menu da recepção")
 OBSERVAÇÃO("A opção mostrar fila está mostrando tudo que está sendo alocado na memória, precisamos ajustar");
 Modificado por filipe  31/05/2023 corrigi a exibição da fila e o menu que retornava sempre para a escolha entre "Recepcionista; veterinário e cliente".
-*/
 
+Ives inseriu o DO while (ln 145-187)
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -39,26 +40,31 @@ typedef struct ProjetoClinicaVet3
     char contatoOuTelefone[U_TAMANHO][S_TAMANHO];
 } Dados;
 
-void mostrar_fila(Dados dado) 
+void mostrar_fila(Dados dado)
 {
     system("cls");
-    for (int i = 0; i < contador; i++) {
-        printf("(%d) ", i+1);
+    for (int i = 0; i < contador; i++)
+    {
+        printf("(%d) ", i + 1);
         printf("%d ", dado.posicoes[i]);
     }
     getch();
 }
 
-void remover_fila(int posicao, Dados *dado) 
+void remover_fila(int posicao, Dados *dado)
 {
-    if (posicao >= 0 && posicao < contador) {
-        for (int i = posicao; i < contador - 1; i++) {
+    if (posicao >= 0 && posicao < contador)
+    {
+        for (int i = posicao; i < contador - 1; i++)
+        {
             dado->posicoes[i] = dado->posicoes[i + 1];
         }
         contador--;
         system("cls");
         printf("Elemento removido da fila.\n");
-    } else {
+    }
+    else
+    {
         system("cls");
         printf("Posição inválida!\n");
     }
@@ -76,26 +82,26 @@ void validarUsuarioSenha(int *usuarioValido, char usuario[], char usuariosSalvos
             break;
         }
     }
-        if (*usuarioValido == 0)
-        {
-            system("cls");
-            printf("\033[4;34miSystem PetShoper - Versão 1.0\033[0m\n\n");
-            printf("\033[0;31mNome de usuário ou senha incorretos!\033[0m\n");
-            sleep(1);
-        }
+    if (*usuarioValido == 0)
+    {
+        system("cls");
+        printf("\033[4;34miSystem PetShoper - Versão 1.0\033[0m\n\n");
+        printf("\033[0;31mNome de usuário ou senha incorretos!\033[0m\n");
+        sleep(1);
+    }
 }
 
 int main(void)
 {
-    void* realloc(void* ptr, size_t size);
+    void *realloc(void *ptr, size_t size);
 
-    Dados dado; //Declarando a struct para cadastro de dados do cliente
+    Dados dado; // Declarando a struct para cadastro de dados do cliente
 
     // declarando duas strings que recebem seus tamanhos pelo define U_TAMANHO 20 e S_TAMANHO 20
     char usuario[U_TAMANHO], senha[S_TAMANHO];
     // declarando as strings que irão armazenar os usuários e senhas salvos,
     char usuariosSalvos[TOTAL_USUARIOS][U_TAMANHO] = {"alexandre", "carlos", "felipe", "ives", "ielber", "jeferson"};
-    char senhasSalvas[TOTAL_USUARIOS][S_TAMANHO] = {"123", "456", "789", "101", "112", "131"};
+    char senhasSalvas[TOTAL_USUARIOS][S_TAMANHO] = {"123", "456", "789", "071", "112", "131"};
     // variaveis primeiro codigo, escrito por Sampaio
     int resposta, respostaRecepcao, codigoCliente, valor;
     // variavel que verifica se o usuário é verdadeiro ou falso
@@ -137,42 +143,55 @@ int main(void)
             printf("\033[1;30m1 - Fila de atendimento\n2 - Cadastro do Cliente\n3 - Dados do cliente\n4 - Voltar ao menu anterior\033[0m\n\n");
             printf("\033[4;34mDigite opção:\033[0m ");
             scanf("%d", &respostaRecepcao);
+
             switch (respostaRecepcao)
             {
-            case 1:
-                system("cls");
-                printf("\033[4;34mFila de atendimento - iSystem PetShoper - Versão 1.0\033[0m\n\n");
-                printf("\033[1;30m1 - Exibir a fila\n2 - Adicionar a fila\033[0m\n");
-                printf("\033[4;34m\nDigite opção:\033[0m ");
-                scanf("%d", &respostaRecepcao);
-                switch (respostaRecepcao)
+                do
                 {
                 case 1:
-                    mostrar_fila(dado);
-                break;
+                    system("cls");
+                    printf("\033[4;34mFila de atendimento - iSystem PetShoper - Versão 1.0\033[0m\n\n");
+                    printf("\033[1;30m1 - Exibir a fila\n2 - Adicionar a fila\n3 - Voltar ao menu de atendimento\033[0m\n");
+                    printf("\033[4;34m\nDigite opção:\033[0m ");
+                    scanf("%d", &respostaRecepcao);
+                    switch (respostaRecepcao)
+                    {
+                    case 1:
+                        mostrar_fila(dado);
+                        break;
 
-                case 2:
-                    if (contador == T_FILA) {
-                    system("cls");
-                    printf("\033[4;34mFila de atendimento - iSystem PetShoper - Versão 1.0\033[0m\n\n");
-                    printf("\033[1;30mA fila está cheia\033[0m\n");
-                    getch();
-                    } else {
-                    system("cls");
-                    printf("\033[4;34mFila de atendimento - iSystem PetShoper - Versão 1.0\033[0m\n\n");
-                    printf("\033[1;30mDigite:\033[0m ");
-                    scanf("%d", &valor);
-                    dado.posicoes[contador] = valor;
-                    contador++;
+                    case 2:
+                        if (contador == T_FILA)
+                        {
+                            system("cls");
+                            printf("\033[4;34mFila de atendimento - iSystem PetShoper - Versão 1.0\033[0m\n\n");
+                            printf("\033[1;30mA fila está cheia\033[0m\n");
+                            getch();
+                        }
+                        else
+                        {
+                            system("cls");
+                            printf("\033[4;34mFila de atendimento - iSystem PetShoper - Versão 1.0\033[0m\n\n");
+                            printf("\033[1;30mDigite:\033[0m ");
+                            scanf("%d", &valor);
+                            dado.posicoes[contador] = valor;
+                            contador++;
+                        }
+                        break;
+
+                    case 3:
+                        system("cls");
+                        printf("Voltar ao menu\n");
+                        break;
+
+                    default:
+                        printf("Insira a opção correta.\n");
+                        system("pause");
+                        break;
                     }
                     break;
 
-                case 3:
-                    system("cls");
-                    printf("Voltar ao menu\n");
-                    system("pause");
-                    break;
-                }
+                } while (respostaRecepcao == 1 || respostaRecepcao == 2);
                 break;
 
             case 2:
@@ -199,7 +218,7 @@ int main(void)
                 printf("\033[4;34mDados do cliente - iSystem PetShoper - Versão 1.0\033[0m\n\n");
                 printf("\033[1;30mDigite codigo do cliente:\033[0m ");
                 scanf("%d", &codigoCliente);
-				system("cls");
+                system("cls");
                 printf("\033[4;34mDados do cliente - iSystem PetShoper - Versão 1.0\033[0m\n\n");
                 printf("\033[1;30mCodigo:\033[0m %d", codigoCliente);
                 printf("\033[1;30m\nNome do Cliente:\033[0m %s", dado.nomeDoCliente[codigoCliente]);
@@ -213,6 +232,7 @@ int main(void)
             case 4:
                 system("cls");
                 printf("\033[4;34mVoltar ao menu anterior - iSystem PetShoper - Versão 1.0\033[0m\n\n");
+
                 break;
 
             default:
